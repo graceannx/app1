@@ -235,6 +235,13 @@ Devise.setup do |config|
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
 
+#for defining username in views
+  config.scoped_views = true
+
+
+#users can get recover password
+config.reset_password_keys = [ :username ]
+config.confirmation_keys = [ :username ]
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
