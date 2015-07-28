@@ -1,0 +1,18 @@
+#version {
+	color : red;
+	font-size : 12px;
+        float:center
+	}
+	
+#rblogo {
+	float:left;
+	padding-right: 4px;
+        padding-top:8px;
+	
+}
+
+#sweg {
+    verticle-align: middle;
+    padding-top: 18px;
+    
+}
