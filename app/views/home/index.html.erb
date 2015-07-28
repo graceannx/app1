@@ -22,12 +22,18 @@
 					<li>
                         <p id="version">Alpha Version:270715D </p>
                     </li>
-                    <li>
-                        <a href="../fb.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Signup</a>
-                    </li>
+                   <% if user_signed_in? %>
+  <li>
+  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+  </li>
+  <li>
+  <a href="/users/dashboard">My Page </a>      
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Login', new_user_session_path)  %>  
+  </li>
+<% end %>
                 </ul>
             </div>
         </div>
