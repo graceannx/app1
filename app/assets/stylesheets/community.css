@@ -4,11 +4,3 @@
 	font-size = 20px;
 	font-colour = #777;
 }
-.townhall-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url('http://orig06.deviantart.net/67f0/f/2013/319/7/5/animal_crossing_town_hall_pixel_art_by_thewolfgalaxy-d6uchec.png') no-repeat center center;
-    background-size: 100%;
-}
