@@ -1,20 +1,22 @@
 #version {
 	color : red;
 	font-size : 12px;
-        text-align:middle
+        float:center
 	}
 	
 #rblogo {
 	float:left;
-	padding-right:2px;
-	padding-top:4px;
+	padding-right: 4px;
+        padding-top:8px;
+	
 }
 
 #sweg {
-	verticle-align: middle;
-	padding-top: 18px;
+    verticle-align: middle;
+    padding-top: 18px;
     
 }
+<<<<<<< HEAD
 .field {
 	color: white;
 	margin: 10px 10px;
@@ -40,3 +42,5 @@
 a {
 	color:#fff;
 }
+=======
+>>>>>>> parent of 9bc90c5... Login pages- views styled - 11:40 29th

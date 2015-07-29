@@ -1,5 +1,6 @@
 
 
+
 <a name="about"></a>
     <div class="intro-header">
         <div class="container">
@@ -10,6 +11,9 @@
                         <h3>Here you can create your account</h3>
             <hr class="intro-divider">
             <%= form_for(resource, as: resource_name, url: registration_path(resource_name) do |f| %>
+=======
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+>>>>>>> parent of 9bc90c5... Login pages- views styled - 11:40 29th
   <%= devise_error_messages! %>
 
   <div class="field">
@@ -40,10 +44,3 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
-
-            <hr class="intro-divider">
-                    </div>
-                </div>
-            </div>
-        </div>
-  </div>

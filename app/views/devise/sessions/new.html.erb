@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <a name="about"></a>
 
     <div class="intro-header">
@@ -11,27 +12,44 @@
             <hr class="intro-divider">
             <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <center>
+=======
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+>>>>>>> parent of 9bc90c5... Login pages- views styled - 11:40 29th
   <div class="field">
    <p><%= f.label :login %><br />
-   <%= f.text_field :login, autofocus:true , id:"textbox"%></p>
+   <%= f.text_field :login, autofocus:true %></p>
+  </div>
 
-<br />
+  <div class="field">
     <%= f.label :password %><br />
+<<<<<<< HEAD
     <%= f.password_field :password, autocomplete: "off", id:"textbox"%>
 <br />
+=======
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+>>>>>>> parent of 9bc90c5... Login pages- views styled - 11:40 29th
   <% if devise_mapping.rememberable? -%>
+    <div class="field">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
-
+    </div>
   <% end -%>
-  <br />
-</div>
+
   <div class="actions">
+<<<<<<< HEAD
     <%= f.submit "Log in", id:"textbox" %>
+=======
+    <%= f.submit "Log in" %>
+>>>>>>> parent of 9bc90c5... Login pages- views styled - 11:40 29th
   </div>
 <% end %>
-<br />
+
 <%= render "devise/shared/links" %>
+<<<<<<< HEAD
 </center>
 
 
@@ -41,3 +59,5 @@
             </div>
         </div>
   </div>
+=======
+>>>>>>> parent of 9bc90c5... Login pages- views styled - 11:40 29th

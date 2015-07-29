@@ -161,11 +161,8 @@ p.copyright {
 }
 
 #profilepic {
-        padding:4px 4px;
-        width:20%;
-        height:20%;
-        border-radius: 80%;
-        background-color:white;
+        width:30%;
+        padding-top: 10%;
 }
 
 
