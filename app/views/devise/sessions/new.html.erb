@@ -1,8 +1,10 @@
 <a name="about"></a>
+
     <div class="intro-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                  
                     <div class="intro-message">
                         <h1>Hello</h1>
                         <h3>Welcome back, please sign in</h3>
@@ -15,7 +17,7 @@
 
 <br />
     <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off", id:"textbox"%>
 <br />
   <% if devise_mapping.rememberable? -%>
       <%= f.check_box :remember_me %>
@@ -25,12 +27,14 @@
   <br />
 </div>
   <div class="actions">
-    <%= f.submit "Log in"%>
+    <%= f.submit "Log in", id:"textbox" %>
   </div>
 <% end %>
 <br />
 <%= render "devise/shared/links" %>
 </center>
+
+
             <hr class="intro-divider">
                     </div>
                 </div>

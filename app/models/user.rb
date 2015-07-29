@@ -1,8 +1,26 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+  class AddUserAvatar < ActiveRecord::Migration
+  def change
+    add_column :users, :avatar, :string
+  end
+end
+
+
+  mount_uploader :avatar, AvatarUploader 
+
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :authentication_keys => [:login]
+
+ # Setup accessible (or protected) attributes for your model
+
+
+  validates_presence_of   :avatar
+  validates_integrity_of  :avatar
+  validates_processing_of :avatar
+
 
   # Virtual attribute for authenticating by either username or email
   # This is in addition to a real persisted field like 'username'
@@ -33,6 +51,12 @@ class User < ActiveRecord::Base
   end
 end
 
+
+class AddUserAvatar < ActiveRecord::Migration
+  def change
+    add_column :users, :avatar, :string
+  end
+end
 
 
 end
