@@ -1,18 +1,37 @@
 #version {
 	color : red;
 	font-size : 12px;
-        float:center
+        text-align:middle
 	}
 	
 #rblogo {
 	float:left;
-	padding-right: 4px;
-        padding-top:8px;
-	
+	padding-right:2px;
+	padding-top:4px;
 }
 
 #sweg {
-    verticle-align: middle;
-    padding-top: 18px;
+	verticle-align: middle;
+	padding-top: 18px;
     
+}
+.field {
+	color: white;
+	margin: 10px 10px;
+	background: transparent;
+
+}
+#lbutton {
+
+	color: White;
+	background-color : transparent;
+	border-style:none;
+}
+#linkz {
+	color: black;
+}
+#textbox {
+	color : white;
+	background: transparent;
+	border: dotted;
 }
