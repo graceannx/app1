@@ -31,7 +31,8 @@
 	color: black;
 }
 #textbox {
-	color : white;
-	background: transparent;
+	color : white !important;
+	background: transparent !important;
+	background-color: transparent !important;
 	border: dotted;
 }
